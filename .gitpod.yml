@@ -1,0 +1,12 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+  - init: "pip install conanpip install --upgrade pip"
+  - command: "pip install -e . && pip install -e .[docs] && pip install -e .[ci]"
+
+vscode:
+  extensions:
+    - njpwerner.autodocstring
+    - GitHub.copilot
+    - MS-vsliveshare.vsliveshare
