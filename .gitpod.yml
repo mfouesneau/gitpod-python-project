@@ -8,5 +8,5 @@ tasks:
 vscode:
   extensions:
     - njpwerner.autodocstring
-    - GitHub.copilot
-    - MS-vsliveshare.vsliveshare
+    - mutable-ai.mutable-ai
+    - genuitecllc.codetogether
