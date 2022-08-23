@@ -11,3 +11,7 @@ vscode:
     - mutable-ai.mutable-ai
     - genuitecllc.codetogether
     - ms-python.python
+    - ms-toolsai.jupyter-renderers
+    - ms-toolsai.jupyter
+    - eamodio.gitlens
+    - mhutchie.git-graph
