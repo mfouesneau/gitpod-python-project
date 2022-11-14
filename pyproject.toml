@@ -5,16 +5,18 @@
 # https://setuptools.pypa.io/en/latest/userguide/pyproject_config.html
 
 [build-system]
-requires = ["setuptools",
-            "setuptools-scm",
+requires = ["setuptools>=45",
+            "setuptools-scm>=6.2",
             "wheel",
-            "extension-helpers"]
+            # Cython extensions
+            "extension-helpers",
+            "Cython"
+            ]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "github-python-template"
+name = "my_package"
 description = "Python project template for Gitpod and VSCode"
-version = "0.1.0"
 readme = "README.md"
 requires-python = ">=3.8"
 keywords = ["template", "python", "gitpod", "vscode"]
@@ -28,6 +30,11 @@ dependencies = [
     "requests",
     'importlib-metadata; python_version<"3.8"',
 ]
+
+dynamic = ["version"]
+
+[tool.setuptools_scm]
+# write_to = "src/my_package/__init__.py"
 
 [tool.setuptools]
 # By default, include-package-data is true in pyproject.toml, so you do
@@ -45,8 +52,6 @@ namespaces = true                # to disable scanning PEP 420 namespaces (true 
 # "*" = ["*.txt"]
 #my_package = ["*.txt", "*.rst"]
 #my_package.data = ["*.txt", "*.rst"]  # for subfolder of my_package
-
-dynamic = ["version"]
 
 [project.optional-dependencies]
 
