@@ -1,6 +1,4 @@
 from setuptools import setup
-from extension_helpers import get_extensions
-
 from distutils.core import Extension
 
 def get_extensions():

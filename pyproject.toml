@@ -34,7 +34,7 @@ dependencies = [
 dynamic = ["version"]
 
 [tool.setuptools_scm]
-# write_to = "src/my_package/__init__.py"
+# write_to = "src/my_package/__version__.py"
 
 [tool.setuptools]
 # By default, include-package-data is true in pyproject.toml, so you do
