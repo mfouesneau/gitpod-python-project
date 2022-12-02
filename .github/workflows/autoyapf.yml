@@ -1,6 +1,7 @@
 # Cleaning code formatting
 name: Formatting python code
 on:
+  workflow_dispatch:
   push:
     paths:
     - '**.py'
